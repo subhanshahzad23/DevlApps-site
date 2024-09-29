@@ -298,7 +298,7 @@ section,
 .bg--violet-400 { background-color: #ffba01; }
 .bg--violet-300 { background-color: #e2bde2; }
 .bg--violet-200 { background-color: #f1cde5; }
-.bg--violet-100 { background-color: #f7e4f1; }
+.bg--violet-100 { background-color: #D3D3D3; }
 
 .bg--yellow-500 { background-color: #ffba01; }
 .bg--yellow-400 { background-color: #ffbd45; }
@@ -311,6 +311,16 @@ section,
 .bg--primary-blue { background-color: #2160fd; }
 .bg--light-grey { background-color: #f0f3ff; }
 .bg--snow { background-color: #fdfdfd; }
+
+.custom-icon-size {
+  font-size: 2rem;   /* Adjust icon size */
+    width: 50px;       /* Set width to control the space it takes */
+    height: 50px;      /* Set height to ensure consistency */
+    line-height: 50px; /* To vertically align the icon properly */
+    margin-bottom: 10px; /* Adjust margin for space between icon and text */
+    display: inline-block; /* Ensure proper alignment */
+}
+
 
 /*------------------------------------------*/
 /*  GRADIENT COLOR BACKGROUND
@@ -447,7 +457,7 @@ section,
 .shape--violet-400:after { background-color: #ffba01; }
 .shape--violet-300:after { background-color: #e2bde2; }
 .shape--violet-200:after { background-color: #f1cde5; }
-.shape--violet-100:after { background-color: #f7e4f1; }
+.shape--violet-100:after { background-color: #D3D3D3; }
 
 .shape--gr-ghost:after { background-image: linear-gradient(180deg, rgba(247, 248, 249, .8) 50%, rgba(247, 248, 249, .05) 100%); }
 .shape--gr-whitesmoke:after {background-image: linear-gradient(180deg, rgba(244, 244, 249, .8) 50%, rgba(244, 244, 249, .05) 100%);}
@@ -1760,7 +1770,7 @@ p.video-txt-sm {
 .shape-ico.color--violet-300 path,
 .shape-ico.color--violet-400 path,
 .shape-ico.color--violet-500 path {
-  fill: #f7e4f1;
+  fill: #D3D3D3;
 }
 
 /*------------------------------------------*/
@@ -3575,6 +3585,13 @@ span.sm-info {
   background-image: url(../images/hero-10.jpg);
   padding-top: 170px;
   padding-bottom: 100px;
+}
+
+#pricing-1{
+  margin-top: 50px;
+  background-image: url(../images/hero-10.jpg);
+
+
 }
 
 .hero-10-txt h4 {
@@ -10972,7 +10989,7 @@ body.theme--dark {
 .shape-ico.color--theme path,
 .shape-ico.color--theme path,
 .shape-ico.color--theme path {
-  fill: #f7e4f1;
+  fill: #D3D3D3;
 }
 
 .newsletter-section .form-control:focus {
