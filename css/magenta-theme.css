@@ -11116,7 +11116,7 @@ body.theme--dark {
       rgba(255, 193, 7, 0.8),
       rgba(255, 193, 7, 0.8)
     ),
-    url("images/footer-background.jpg");
+    url("../images/footer-background.jpg");
   background-size: cover;
   background-position: center;
   color: #ffffff; /* Ensure text is readable */
