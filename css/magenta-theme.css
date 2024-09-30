@@ -11008,6 +11008,7 @@ body.theme--dark {
 
 
 /* Styling for pricing cards */
+/* Styling for pricing cards */
 .pricing-card {
   width: 430px; /* Fixed width for pricing cards */
   border-radius: 15px;
@@ -11060,11 +11061,52 @@ body.theme--dark {
   padding: 12px 25px;
   text-decoration: none;
   transition: background-color 0.3s;
+  margin-top: -5px;
 }
 
 .btn--theme:hover {
   background-color: #e0a800;
 }
 
+/* Styling for custom slider */
+.slider-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.custom-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ffc107 0%, #ff8c00 100%);
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.custom-slider:hover {
+  opacity: 1;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #28a745;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #28a745;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 

@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!-- Martex - Software, App, SaaS & Startup Landing Pages Pack design by DSAThemes (http://www.dsathemes.com) -->
-<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -25,23 +21,6 @@
     <!-- FAVICON AND TOUCH ICONS -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="images/apple-touch-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/apple-touch-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="images/apple-touch-icon-76x76.png"
-    />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon" />
 
     <!-- GOOGLE FONTS -->
     <link
@@ -79,16 +58,7 @@
     <!-- ON SCROLL ANIMATION -->
     <link href="css/animate.css" rel="stylesheet" />
 
-    <!-- TEMPLATE CSS -->
-    <!-- <link href="css/blue-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/crocus-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/green-theme.css" rel="stylesheet"> -->
     <link href="css/magenta-theme.css" rel="stylesheet" />
-    <!-- <link href="css/pink-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/purple-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/red-theme.css" rel="stylesheet"> -->
-    <!-- <link href="css/violet-theme.css" rel="stylesheet"> -->
 
     <!-- RESPONSIVE CSS -->
     <link href="css/responsive.css" rel="stylesheet" />
@@ -192,7 +162,11 @@
 
       <!-- HERO-10
 ============================================= -->
-      <section id="hero-10" class=" bg--scroll hero-section" style="padding-top: 130px !important;">
+      <section
+        id="hero-10"
+        class="bg--scroll hero-section"
+        style="padding-top: 130px !important"
+      >
         <div class="container">
           <div class="row d-flex align-items-center">
             <!-- HERO TEXT -->
@@ -260,7 +234,7 @@
                 <h2 class="s-48 w-700">Les Avantages</h2>
 
                 <!-- Text -->
-                <p class="s-21 color--grey" >
+                <p class="s-21 color--grey">
                   Découvrez les nombreux avantages que DevlApps apporte à la
                   gestion de vos projets immobiliers.
                 </p>
@@ -510,7 +484,11 @@
       <!-- END FEATURES-11 -->
 
       <!-- FEATURES-2 ============================================= -->
-      <section id="features-11" class="pb-70  pt-70 features-section division" style="background-color: #f7f7f7;">
+      <section
+        id="features-11"
+        class="pb-70 pt-70 features-section division"
+        style="background-color: #f7f7f7"
+      >
         <div class="container">
           <!-- SECTION TITLE -->
           <div class="row justify-content-center">
@@ -668,261 +646,184 @@
         <!-- End container -->
       </section>
       <!-- END FEATURES-2 -->
-<!-- PRICING SECTION ============================================= -->
-<section id="pricing" class="pb-40 inner-page-hero pricing-section" style="padding-top: 60px !important;">
-  <div class="container">
-    <!-- SECTION TITLE -->
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8">
-        <div class="section-title mb-70">
-          <!-- Title -->
-          <h2 class="s-52 w-700 text-center">Simple, Flexible Pricing</h2>
+      <!-- PRICING SECTION ============================================= -->
+      <section
+        id="pricing"
+        class="pb-40 inner-page-hero pricing-section"
+        style="padding-top: 30px !important"
+      >
+        <div class="container">
+          <!-- SECTION TITLE -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="section-title mb-70">
+                <!-- Title -->
+                <h2 class="s-52 w-700 text-center" style="margin-bottom: 35px">
+                  Simple, Flexible Pricing
+                </h2>
 
-          <!-- Slider for Lot Range Selection -->
-          <div class="text-center mt-30">
-            <label for="lotRange" class="s-18 w-700 text-dark">Combien de lots réalisez-vous ?</label>
-            <div class="slider-container mt-20">
-              <input
-                type="range"
-                id="lotRange"
-                min="1"
-                max="3"
-                step="1"
-                value="1"
-                onchange="updatePricing()"
-                class="custom-slider"
-              />
-              <div class="text-dark mt-10" id="lotRangeLabel">1-20</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END SECTION TITLE -->
-
-    <!-- PRICING TABLES -->
-    <div class="pricing-1-wrapper d-flex justify-content-center align-items-center">
-      <div class="row row-cols-1 row-cols-md-2">
-        <!-- DEVLPAPPS PLAN -->
-        <div class="col">
-          <div
-            id="devlapps-plan"
-            class="pricing-card p-table pricing-1-table bg--white-100 block-shadow wow fadeInUp text-center"
-          >
-            <!-- TABLE HEADER -->
-            <div class="pricing-table-header">
-              <!-- Price -->
-              <div class="price">
-                <span class="color--black" id="devlapps-price">200.00</span>
-                <sup class="color--black">€</sup>
-                <sup class="validity color--grey">/lot/mois</sup>
+                <!-- Slider for Lot Range Selection -->
+                <div class="text-center mt-15" style="margin-bottom: -80px">
+                  <label for="lotRange" class="s-18 w-700 text-dark"
+                    >Combien de lots réalisez-vous ?</label
+                  >
+                  <div class="slider-container mt-20">
+                    <input
+                      type="range"
+                      id="lotRange"
+                      min="1"
+                      max="3"
+                      step="1"
+                      value="1"
+                      onchange="updatePricing()"
+                      class="custom-slider"
+                    />
+                    <div class="text-dark mt-10" id="lotRangeLabel">1-20</div>
+                  </div>
+                </div>
               </div>
-
-              <!-- Plan Name -->
-              <h5 class="s-24 w-700 mt-20">DevlApps</h5>
             </div>
-            <!-- END TABLE HEADER -->
-
-            <!-- PRICING FEATURES -->
-            <ul class="pricing-features">
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Contact</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Planning</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Documents Techniques</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Externalisation</p></li>
-              <li><p><i class="fas fa-minus-circle feature-icon minus-icon"></i> MyTMA</p></li>
-            </ul>
-
-            <!-- Call to Action -->
-            <a href="#" class="btn r-04 btn--theme mt-25">Essai 30 jours offert !</a>
           </div>
-        </div>
-        <!-- END DEVLPAPPS PLAN -->
+          <!-- END SECTION TITLE -->
 
-        <!-- DEVLPAPPS + MYTMA PLAN -->
-        <div class="col">
+          <!-- PRICING TABLES -->
           <div
-            id="devlapps-mytma-plan"
-            class="pricing-card p-table pricing-1-table bg--white-100 block-shadow wow fadeInUp text-center"
+            class="pricing-1-wrapper d-flex justify-content-center align-items-center"
           >
-            <!-- TABLE HEADER -->
-            <div class="pricing-table-header">
-              <!-- Price -->
-              <div class="price">
-                <span class="color--black" id="devlapps-mytma-price">350.00</span>
-                <sup class="color--black">€</sup>
-                <sup class="validity color--grey">/lot/mois</sup>
+            <div class="row row-cols-1 row-cols-md-2">
+              <!-- DEVLPAPPS PLAN -->
+              <div class="col">
+                <div
+                  id="devlapps-plan"
+                  class="pricing-card p-table pricing-1-table bg--white-100 block-shadow wow fadeInUp text-center"
+                >
+                  <!-- TABLE HEADER -->
+                  <div class="pricing-table-header">
+                    <!-- Price -->
+                    <div class="price">
+                      <span class="color--black" id="devlapps-price"
+                        >200.00</span
+                      >
+                      <sup class="color--black">€</sup>
+                      <sup class="validity color--grey">/ mois</sup>
+                    </div>
+
+                    <!-- Plan Name -->
+                    <h5 class="s-24 w-700 mt-20">DevlApps</h5>
+                  </div>
+                  <!-- END TABLE HEADER -->
+
+                  <!-- PRICING FEATURES -->
+                  <ul class="pricing-features">
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i> Contact
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Planning
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Documents Techniques
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Externalisation
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i
+                          class="fas fa-minus-circle feature-icon minus-icon"
+                        ></i>
+                        MyTMA
+                      </p>
+                    </li>
+                  </ul>
+
+                  <!-- Call to Action -->
+                  <a href="#" class="btn r-04 btn--theme mt-25"
+                    >Essai 30 jours offert !</a
+                  >
+                </div>
               </div>
+              <!-- END DEVLPAPPS PLAN -->
 
-              <!-- Plan Name -->
-              <h5 class="s-24 w-700 mt-20">DevlApps + MyTMA</h5>
+              <!-- DEVLPAPPS + MYTMA PLAN -->
+              <div class="col">
+                <div
+                  id="devlapps-mytma-plan"
+                  class="pricing-card p-table pricing-1-table bg--white-100 block-shadow wow fadeInUp text-center"
+                >
+                  <!-- TABLE HEADER -->
+                  <div class="pricing-table-header">
+                    <!-- Price -->
+                    <div class="price">
+                      <span class="color--black" id="devlapps-mytma-price"
+                        >350.00</span
+                      >
+                      <sup class="color--black">€</sup>
+                      <sup class="validity color--grey">/ mois</sup>
+                    </div>
+
+                    <!-- Plan Name -->
+                    <h5 class="s-24 w-700 mt-20">DevlApps + MyTMA</h5>
+                  </div>
+                  <!-- END TABLE HEADER -->
+
+                  <!-- PRICING FEATURES -->
+                  <ul class="pricing-features">
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i> Contact
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Planning
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Documents Techniques
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i>
+                        Externalisation
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-check-circle feature-icon"></i> MyTMA
+                      </p>
+                    </li>
+                  </ul>
+
+                  <!-- Call to Action -->
+                  <a href="#" class="btn r-04 btn--theme mt-25"
+                    >Essai 30 jours offert !</a
+                  >
+                </div>
+              </div>
+              <!-- END DEVLPAPPS + MYTMA PLAN -->
             </div>
-            <!-- END TABLE HEADER -->
-
-            <!-- PRICING FEATURES -->
-            <ul class="pricing-features">
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Contact</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Planning</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Documents Techniques</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> Externalisation</p></li>
-              <li><p><i class="fas fa-check-circle feature-icon"></i> MyTMA</p></li>
-            </ul>
-
-            <!-- Call to Action -->
-            <a href="#" class="btn r-04 btn--theme mt-25">Essai 30 jours offert !</a>
           </div>
+          <!-- PRICING TABLES -->
         </div>
-        <!-- END DEVLPAPPS + MYTMA PLAN -->
-      </div>
-    </div>
-    <!-- PRICING TABLES -->
-  </div>
-  <!-- End container -->
-</section>
-<!-- END PRICING SECTION -->
-
-<script>
-  function updatePricing() {
-    const lotRange = document.getElementById("lotRange").value;
-    let devlappsPrice = 200;
-    let devlappsMyTMAPrice = 350;
-    let lotRangeLabel = "";
-
-    // Set prices and lot range labels based on slider value
-    switch (lotRange) {
-      case "1":
-        devlappsPrice = 200;
-        devlappsMyTMAPrice = 350;
-        lotRangeLabel = "1-20";
-        break;
-      case "2":
-        devlappsPrice = 4.99;
-        devlappsMyTMAPrice = 7.99;
-        lotRangeLabel = "101-500";
-        break;
-      case "3":
-        devlappsPrice = 2.99;
-        devlappsMyTMAPrice = 5.50;
-        lotRangeLabel = "501-1000";
-        break;
-    }
-
-    // Update HTML with the new prices
-    document.getElementById("devlapps-price").innerText = devlappsPrice.toFixed(2);
-    document.getElementById("devlapps-mytma-price").innerText = devlappsMyTMAPrice.toFixed(2);
-    document.getElementById("lotRangeLabel").innerText = lotRangeLabel;
-  }
-</script>
-
-<!-- FontAwesome CDN for Icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-
-<style>
-  /* Styling for pricing cards */
-  .pricing-card {
-    width: 430px; /* Fixed width for pricing cards */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 20px auto;
-  }
-
-  .price {
-    font-size: 2.4rem;
-    font-weight: bold;
-  }
-
-  .pricing-table-header h5 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-  }
-
-  .pricing-features {
-    list-style-type: none;
-    padding: 0;
-    margin: 30px 0;
-  }
-
-  .pricing-features li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-  }
-
-  .feature-icon {
-    color: #28a745; /* Green color for check icons */
-    margin-right: 10px;
-    font-size: 1.2rem;
-  }
-
-  .minus-icon {
-    color: #888; /* Grey color for minus icon */
-  }
-
-  /* Call to action button styling */
-  .btn--theme {
-    background-color: #ffc107; /* Dark yellow for button */
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 12px 25px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-
-  .btn--theme:hover {
-    background-color: #e0a800;
-  }
-
-  /* Styling for custom slider */
-  .slider-container {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .custom-slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(90deg, #ffc107 0%, #ff8c00 100%);
-    outline: none;
-    opacity: 0.9;
-    transition: opacity 0.3s;
-  }
-
-  .custom-slider:hover {
-    opacity: 1;
-  }
-
-  .custom-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #28a745;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .custom-slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #28a745;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-</style>
-
-
-
+        <!-- End container -->
+      </section>
+      <!-- END PRICING SECTION -->
 
       <!-- BANNER-13
 ============================================= -->
@@ -972,9 +873,8 @@
       </section>
       <!-- END BANNER-13 -->
 
-      <!-- FOOTER-3
-			============================================= -->
-      <footer id="footer-3" class="pt-100 footer">
+      <!-- FOOTER-3 ============================================= -->
+      <footer id="footer-3" class="pt-100 mt-40 footer dark-yellow-footer">
         <div class="container">
           <!-- FOOTER CONTENT -->
           <div class="row">
@@ -983,7 +883,7 @@
               <div class="footer-info">
                 <img
                   class="footer-logo"
-                  src="images/logo.png"
+                  src="images/footer-logo.png"
                   alt="footer-logo"
                 />
               </div>
@@ -1115,8 +1015,8 @@
               <div class="col">
                 <div class="bottom-secondary-link ico-15 text-end">
                   <p class="p-sm">
-                    <a href="#"
-                      >Made <span class="flaticon-heart"></span> by Subhan</a
+                    <a href="https://www.axtrastudio.com/Home"
+                      >Made <span class="flaticon-heart"></span> by AxtraStudios</a
                     >
                   </p>
                 </div>
@@ -1129,8 +1029,105 @@
         <!-- End container -->
       </footer>
       <!-- END FOOTER-3 -->
+
+      <style>
+        /* Styling for dark yellow transparent background with image */
+        .dark-yellow-footer {
+          background: linear-gradient(
+              rgba(255, 193, 7, 0.8),
+              rgba(255, 193, 7, 0.8)
+            ),
+            url("images/footer-background.jpg");
+          background-size: cover;
+          background-position: center;
+          color: #ffffff; /* Ensure text is readable */
+        }
+
+        .footer .footer-links h6 {
+          color: #ffffff; /* White text color for titles */
+        }
+
+        .footer .footer-links a {
+          color: #ffffff; /* White text color for links */
+          transition: color 0.3s;
+        }
+
+        .footer .footer-links a:hover {
+          color: #ff8c00; /* Bright yellow for hover state */
+        }
+
+        .footer-logo {
+          max-width: 150px;
+          margin-bottom: 20px;
+        }
+
+        .footer-socials a {
+          color: #ffffff; /* Social icons in white */
+          transition: color 0.3s;
+        }
+
+        .footer-socials a:hover {
+          color: #ff8c00; /* Bright yellow for hover state */
+        }
+
+        .bottom-footer hr {
+          border-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+          ); /* Divider line with transparency */
+        }
+
+        .footer-copyright {
+          color: rgba(255, 255, 255, 0.7); /* Semi-transparent text */
+        }
+
+        .bottom-secondary-link a {
+          color: rgba(255, 255, 255, 0.9);
+        }
+
+        .bottom-secondary-link a:hover {
+          color: #ff8c00;
+        }
+      </style>
     </div>
     <!-- END PAGE CONTENT -->
+
+    <script>
+      function updatePricing() {
+        const lotRange = document.getElementById("lotRange").value;
+        let devlappsPrice = 200;
+        let devlappsMyTMAPrice = 350;
+        let lotRangeLabel = "";
+
+        // Set prices and lot range labels based on slider value
+        switch (lotRange) {
+          case "1":
+            devlappsPrice = 200;
+            devlappsMyTMAPrice = 350;
+            lotRangeLabel = "1-20";
+            break;
+          case "2":
+            devlappsPrice = 4.99;
+            devlappsMyTMAPrice = 7.99;
+            lotRangeLabel = "101-500";
+            break;
+          case "3":
+            devlappsPrice = 2.99;
+            devlappsMyTMAPrice = 5.5;
+            lotRangeLabel = "501-1000";
+            break;
+        }
+
+        // Update HTML with the new prices
+        document.getElementById("devlapps-price").innerText =
+          devlappsPrice.toFixed(2);
+        document.getElementById("devlapps-mytma-price").innerText =
+          devlappsMyTMAPrice.toFixed(2);
+        document.getElementById("lotRangeLabel").innerText = lotRangeLabel;
+      }
+    </script>
 
     <!-- EXTERNAL SCRIPTS
 		============================================= -->
@@ -1152,19 +1149,5 @@
 
     <!-- Custom Script -->
     <script src="js/custom.js"></script>
-
-    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-    <!--
-		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		--></body>
+  </body>
 </html>
