@@ -11110,3 +11110,64 @@ body.theme--dark {
 }
 
 
+/* Styling for dark yellow transparent background with image */
+.dark-yellow-footer {
+  background: linear-gradient(
+      rgba(255, 193, 7, 0.8),
+      rgba(255, 193, 7, 0.8)
+    ),
+    url("images/footer-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* Ensure text is readable */
+}
+
+.footer .footer-links h6 {
+  color: #ffffff; /* White text color for titles */
+}
+
+.footer .footer-links a {
+  color: #ffffff; /* White text color for links */
+  transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+  color: #ff8c00; /* Bright yellow for hover state */
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  color: #ffffff; /* Social icons in white */
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ff8c00; /* Bright yellow for hover state */
+}
+
+.bottom-footer hr {
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Divider line with transparency */
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent text */
+}
+
+.bottom-secondary-link a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bottom-secondary-link a:hover {
+  color: #ff8c00;
+}
+
+
