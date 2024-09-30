@@ -1912,6 +1912,8 @@ p.video-txt-sm {
   letter-spacing: -0.5px;
 }
 
+
+
 .section-title p.p-md,
 .section-title p.p-lg,
 .section-title p.p-xl,
@@ -1919,6 +1921,7 @@ p.video-txt-sm {
 .section-title p.s-21 {
   margin-top: 18px;
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
 .section-title p.p-md,
@@ -11001,6 +11004,66 @@ body.theme--dark {
   color: #fff!important;
   background-color: #ffba01;
   border: 2px solid #ffba01;
+}
+
+
+/* Styling for pricing cards */
+.pricing-card {
+  width: 430px; /* Fixed width for pricing cards */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.pricing-table-header h5 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.pricing-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.feature-icon {
+  color: #28a745; /* Green color for check icons */
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.minus-icon {
+  color: #888; /* Grey color for minus icon */
+}
+
+/* Call to action button styling */
+.btn--theme {
+  background-color: #ffc107; /* Dark yellow for button */
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn--theme:hover {
+  background-color: #e0a800;
 }
 
 
