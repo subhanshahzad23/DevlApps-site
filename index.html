@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
   <head>
@@ -672,13 +672,13 @@
                       type="range"
                       id="lotRange"
                       min="1"
-                      max="3"
+                      max="5"
                       step="1"
                       value="1"
                       onchange="updatePricing()"
                       class="custom-slider"
                     />
-                    <div class="text-dark mt-10" id="lotRangeLabel">1-20</div>
+                    <div class="text-dark mt-10" id="lotRangeLabel" style="margin-top: -5px;">1-20</div>
                   </div>
                 </div>
               </div>
@@ -704,7 +704,7 @@
                       <span class="color--black" id="devlapps-price"
                         >200.00</span
                       >
-                      <sup class="color--black">€</sup>
+                      <sup class="currency color--black">€</sup>
                       <sup class="validity color--grey">/ mois</sup>
                     </div>
 
@@ -769,7 +769,7 @@
                       <span class="color--black" id="devlapps-mytma-price"
                         >350.00</span
                       >
-                      <sup class="color--black">€</sup>
+                      <sup class="currency color--black">€</sup>
                       <sup class="validity color--grey">/ mois</sup>
                     </div>
 
@@ -874,7 +874,7 @@
       <!-- END BANNER-13 -->
 
       <!-- FOOTER-3 ============================================= -->
-      <footer id="footer-3" class="pt-100 mt-40 footer dark-yellow-footer">
+      <footer id="footer-3" class="pt-100 mt-40 footer">
         <div class="container">
           <!-- FOOTER CONTENT -->
           <div class="row">
@@ -883,7 +883,7 @@
               <div class="footer-info">
                 <img
                   class="footer-logo"
-                  src="images/footer-logo.png"
+                  src="images/logo.png"
                   alt="footer-logo"
                 />
               </div>
@@ -923,16 +923,16 @@
                 <!-- Links -->
                 <ul class="foo-links clearfix">
                   <li>
-                    <p><a href="features.html">Integration</a></p>
+                    <p><a href="#">Integration</a></p>
                   </li>
                   <li>
-                    <p><a href="reviews.html">Customers</a></p>
+                    <p><a href="#">Customers</a></p>
                   </li>
                   <li>
-                    <p><a href="pricing-1.html">Pricing</a></p>
+                    <p><a href="#">Pricing</a></p>
                   </li>
                   <li>
-                    <p><a href="help-center.html">Help Center</a></p>
+                    <p><a href="#">Help Center</a></p>
                   </li>
                 </ul>
               </div>
@@ -993,42 +993,38 @@
               </div>
             </div>
             <!-- END FOOTER LINKS -->
+
+            <!-- END FOOTER LINKS -->
           </div>
           <!-- END FOOTER CONTENT -->
 
           <hr />
           <!-- FOOTER DIVIDER LINE -->
 
-          <!-- BOTTOM FOOTER -->
-          <div class="bottom-footer">
-            <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
-              <!-- FOOTER COPYRIGHT -->
-              <div class="col">
-                <div class="footer-copyright">
-                  <p class="p-sm">
-                    &copy; 2024 DevlApps. <span>All Rights Reserved</span>
-                  </p>
-                </div>
-              </div>
-
-              <!-- FOOTER SECONDARY LINK -->
-              <div class="col">
-                <div class="bottom-secondary-link ico-15 text-end">
-                  <p class="p-sm">
-                    <a href="https://www.axtrastudio.com/Home"
-                      >Made <span class="flaticon-heart"></span> by
-                      AxtraStudios</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End row -->
-          </div>
           <!-- END BOTTOM FOOTER -->
         </div>
         <!-- End container -->
       </footer>
+      <div class="bottom-footer dark-yellow-footer">
+        <!-- FOOTER LOGO -->
+        <div class="footer-logo">
+          <img src="./images/footer-logo.png" alt="Logo" />
+        </div>
+
+        <!-- FOOTER COPYRIGHT AND LINK -->
+
+        <!-- FOOTER SECONDARY LINK -->
+        <div class="bottom-secondary-link">
+          <p>
+            <a
+              href="https://www.axtrastudio.com/Home"
+              style="padding-right: 30px; color: white"
+              >Made <span class="flaticon-heart"></span> by AxtraStudios</a
+            >
+          </p>
+        </div>
+      </div>
+
       <!-- END FOOTER-3 -->
     </div>
     <!-- END PAGE CONTENT -->
@@ -1048,22 +1044,56 @@
             lotRangeLabel = "1-20";
             break;
           case "2":
+            devlappsPrice = 6.99;
+            devlappsMyTMAPrice = 10.99;
+            lotRangeLabel = "21-100";
+            break;
+          case "3":
             devlappsPrice = 4.99;
             devlappsMyTMAPrice = 7.99;
             lotRangeLabel = "101-500";
             break;
-          case "3":
+          case "4":
             devlappsPrice = 2.99;
             devlappsMyTMAPrice = 5.5;
             lotRangeLabel = "501-1000";
             break;
+          case "5":
+            devlappsPrice = "Accords cadres";
+            devlappsMyTMAPrice = "Accords cadres";
+            lotRangeLabel = "+1000";
+            break;
         }
 
         // Update HTML with the new prices
-        document.getElementById("devlapps-price").innerText =
-          devlappsPrice.toFixed(2);
-        document.getElementById("devlapps-mytma-price").innerText =
-          devlappsMyTMAPrice.toFixed(2);
+        const devlappsPriceElement = document.getElementById("devlapps-price");
+        const devlappsMyTMAPriceElement = document.getElementById(
+          "devlapps-mytma-price"
+        );
+        const currencyElements = document.querySelectorAll(".currency");
+
+        // Set the pricing text
+        devlappsPriceElement.innerText =
+          typeof devlappsPrice === "number"
+            ? Number.isInteger(devlappsPrice)
+              ? devlappsPrice
+              : devlappsPrice.toFixed(2)
+            : devlappsPrice;
+
+        devlappsMyTMAPriceElement.innerText =
+          typeof devlappsMyTMAPrice === "number"
+            ? Number.isInteger(devlappsMyTMAPrice)
+              ? devlappsMyTMAPrice
+              : devlappsMyTMAPrice.toFixed(2)
+            : devlappsMyTMAPrice;
+
+        // Show or hide the currency symbol
+        if (lotRange === "5") {
+          currencyElements.forEach((el) => (el.style.display = "none"));
+        } else {
+          currencyElements.forEach((el) => (el.style.display = "inline"));
+        }
+
         document.getElementById("lotRangeLabel").innerText = lotRangeLabel;
       }
     </script>
